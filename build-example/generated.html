@@ -1,0 +1,991 @@
+<link rel="stylesheet" href="style.css"><h1>Write a program to print hello world.</h1><h3>HelloWorld.java</h3><div class='code'><code>public class HelloWorld{
+  public static void main(String[] args){
+System.out.println(&quot; By Madhurendra&quot;);
+        System.out.print(&quot;Hello World!&quot;);
+  }
+}
+</code></div><img src="HelloWorld.png"/><h1>Write a program to print average of an array</h1><h3>Average.java</h3><div class='code'><code>public class Average{
+  public static void main(String[] args){
+System.out.println(&quot; By Madhurendra&quot;);
+     int a[] = {1,2,4,12,456};
+     int sum=0;
+     for(int i=0;i&lt;a.length;++i)
+        sum+=a[i];
+     int avg = sum/a.length;
+     System.out.println(&quot;Average of &quot;+a.length+&quot; elements is &quot;+avg);
+  }
+ 
+}
+</code></div><img src="Average.png"/><h1>Write a program to print a pattern</h1><h3>PatternNumber.java</h3><div class='code'><code>public class PatternNumber{
+  public static void main(String[] args){
+System.out.println(&quot; By Madhurendra&quot;);
+     int num = 5;
+     for(int i=0;i&lt;num;++i){
+		for(int j=0;j&lt;i;++j)
+		   System.out.print(j+&quot; &quot;);
+	   System.out.print(&quot;\n&quot;);
+    }
+     
+  }
+ 
+}
+</code></div><img src="PatternNumber.png"/><h1>Write a program to print a pattern</h1><h3>PatternStar.java</h3><div class='code'><code>public class PatternStar{
+  public static void main(String[] args){
+System.out.println(&quot; By Madhurendra&quot;);
+     int num = 5;
+     for(int i=0;i&lt;num;++i){
+		for(int j=0;j&lt;i;++j)
+		   System.out.print(&quot;*&quot;);
+	   System.out.print(&quot;\n&quot;);
+    }
+     
+  }
+ 
+}
+</code></div><img src="PatternStar.png"/><h1>Write a program to print a pattern</h1><h3>PatternSweet.java</h3><div class='code'><code>public class PatternSweet{
+  public static void main(String[] args){
+System.out.println(&quot; By Madhurendra&quot;);
+     int c = 6;
+     for(int i=0;i&lt;c;++i){
+      for(int j=0;j&lt;(c-i);++j)
+	System.out.print(&quot; &quot;);
+      for(int j=0;j&lt;=i;++j)
+        System.out.print(&quot;* &quot;);
+      System.out.println(&quot;&quot;);
+     }
+     
+     for(int i=0;i&lt;c;++i){
+      for(int j=0;j&lt;=i;++j)
+	System.out.print(&quot; &quot;);
+
+      for(int j=0;j&lt;(c-i);++j)
+        System.out.print(&quot;* &quot;);
+      System.out.println(&quot;&quot;);
+     }
+  }
+ 
+}
+</code></div><img src="PatternSweet.png"/><h1>Write a program to  find areas.</h1><h3>Area.java</h3><div class='code'><code>import java.util.*;
+class Area
+{
+	public static void main(String args[])
+	{
+System.out.println(&quot; By Madhurendra&quot;);
+		Scanner sc=new Scanner(System.in);
+		int choice;
+		System.out.println(&quot;1:- Area of circle  \n2:- Area of Rectangle  \n3:- Area of Triangle  &quot;);
+		System.out.println(&quot;Enter your choice &quot;);
+		System.out.println(&quot;Calculate area &quot;);
+		choice=sc.nextInt();
+		switch(choice)
+		{
+			case 1:
+				int r;
+				double area1;
+				System.out.println(&quot;Enter radius for Circle :: &quot;);
+				r=sc.nextInt();
+				area1=3.14*r*r;
+				System.out.println(&quot;Area of Circle is :: &quot;+area1);
+				break;
+			case 2:
+				int l,b;
+				double area2;
+				System.out.println(&quot;Enter Length :: &quot;);
+				l=sc.nextInt();
+				System.out.println(&quot;Enter Breadth :: &quot;);
+				b=sc.nextInt();
+				area2=l*b;
+				System.out.println(&quot;Area of rectangle is :: &quot;+area2);
+				break;
+			case 3:
+				int base,h;
+				double area3;
+				System.out.println(&quot;Enter Base :: &quot;);
+				base=sc.nextInt();
+				System.out.println(&quot;Enter Height :: &quot;); 
+				h=sc.nextInt();
+				area3=0.5*base*h;
+				System.out.println(&quot;Area of Triangle is :: &quot;+area3);
+				break;
+			default:
+				System.out.println(&quot;Invalid input&quot;);
+		}
+		
+	}
+}
+
+
+</code></div><img src="Area.png"/><h1>Write a program to  find armstrong.</h1><h3>Armstrong.java</h3><div class='code'><code>import java.util.Scanner;
+class Armstrong
+{
+      public static void main(String[]args)
+          {
+System.out.println(&quot; By Madhurendra&quot;);
+                 int c=0,a,temp,n;
+                 System.out.println(&quot;Enter the number&quot;);
+                 Scanner obj=new Scanner(System.in);
+                 n=obj.nextInt();
+    	
+                 temp=n;
+                while(n&gt;0)
+                     {
+                            a=n%10;
+                            n=n/10;
+                            c=c+(a*a*a);
+                     }  
+                 if(temp==c)
+                    {
+                            System.out.println(&quot;The number is an Armstrong number&quot;);
+                   }
+                else
+                   {
+                            System.out.println(&quot;Not an Armstrong number&quot;);
+                   }
+        }
+}
+</code></div><img src="Armstrong.png"/><h1>Write a program to  demonstrate array.</h1><h3>ArrayDemo.java</h3><div class='code'><code>import java.util.*;
+
+public class ArrayDemo{
+	public static void main(String []args){
+System.out.println(&quot; By Madhurendra&quot;);
+		int [] arr=new int[5];
+		System.out.println(&quot;Enter the value of array: &quot;);
+		Scanner sc=new Scanner(System.in);
+		for(int i=0;i&lt;5;i++){
+			arr[i]=sc.nextInt();
+		}
+		System.out.println(&quot;You have entered these values: &quot;);
+		for(int i=0;i&lt;5;i++){
+			System.out.println(&quot; &quot;+arr[i]);
+		}
+	}
+}
+</code></div><img src="ArrayDemo.png"/><h1>Write a program to print factorial of a number</h1><h3>Factorial.java</h3><div class='code'><code>import java.util.Scanner;
+public class Factorial{
+  public static void main(String[] args){
+System.out.println(&quot; By Madhurendra&quot;);
+     Scanner s = new Scanner(System.in);
+     System.out.println(&quot;Enter a number : &quot;);
+     int num = s.nextInt();
+     
+     int fact=1;
+     for(int i=2;i&lt;=num;++i)
+        fact*=i;
+       
+     System.out.println(&quot;Factorial of &quot;+num+&quot; is &quot;+fact);
+  }
+ 
+}
+</code></div><img src="Factorial.png"/><h1>Write a program to sort using bubble sort</h1><h3>BubbleSort.java</h3><div class='code'><code>public class BubbleSort{
+  public static void main(String[] args){
+System.out.println(&quot; By Madhurendra&quot;);
+     int a[] = {1,2,4,2,3,5,5,6,8};
+     
+     
+     for(int i=0;i&lt;a.length;++i){
+      for(int j=1;j&lt;a.length;++j){
+        if(a[j]&lt;a[j-1]){
+			int tmp = a[j-1];
+			a[j-1]= a[j];
+			a[j] = tmp;
+		}
+	   }
+     }
+     
+     
+     System.out.println(&quot;Sorted array is : &quot;);
+     for(int i=0;i&lt;a.length;++i)
+		System.out.print(a[i]+&quot; &quot;);
+     
+  }
+ 
+}
+</code></div><img src="BubbleSort.png"/><h1>Write a program to add two matrix</h1><h3>MatrixAdd.java</h3><div class='code'><code>public class MatrixAdd{
+  public static void main(String[] args){
+System.out.println(&quot; By Madhurendra&quot;);
+     int a[][] = {{1,2,4},{2,3,5},{5,6,8}};
+     int b[][] = {{1,3,4},{2,3,5},{15,6,8}};
+     int sum[][] = new  int[a.length][a[0].length];
+     for(int i=0;i&lt;a.length;++i){
+      for(int j=0;j&lt;a[i].length;++j)
+        sum[i][j]=  a[i][j]+b[i][j];
+     }
+     
+     
+     for(int i=0;i&lt;a.length;++i){
+      for(int j=0;j&lt;a[i].length;++j)
+		System.out.print(sum[i][j]+&quot; &quot;);
+		System.out.println(&quot;&quot;);
+     }
+  }
+ 
+}
+</code></div><img src="MatrixAdd.png"/><h1>Write a program to check if number is palindrome</h1><h3>Palindrome.java</h3><div class='code'><code>import java.util.Scanner;
+public class Palindrome{
+  public static void main(String[] args){
+System.out.println(&quot; By Madhurendra&quot;);
+     Scanner s = new Scanner(System.in);
+     System.out.println(&quot;Enter a number : &quot;);
+     int num = s.nextInt();
+     
+     int temp  = num,rev=0;
+     while(temp&gt;0){
+		rev=rev*10+temp%10;
+		temp /=10;
+	 }
+       
+     if(num==rev)
+	 	System.out.println(&quot;it&#x27;s a palindrome.&quot;);
+	 else
+	 	System.out.println(&quot;it&#x27;s not a palindrome.&quot;);
+  }
+ 
+}
+</code></div><img src="Palindrome.png"/><h1>Write a program to show usage of final</h1><h3>FinalDemo.java</h3><div class='code'><code>public class FinalDemo{
+	
+	public static void main(String[] args){
+System.out.println(&quot; By Madhurendra&quot;);
+		FinalUsage f = new FinalUsage();
+		FinalUsageAnother fa = new FinalUsageAnother();
+		System.out.println(&quot;FinalUsage Value : &quot;+f.UPPER_CHAR);
+		System.out.println(&quot;FinalUsageAnother Value : &quot;+fa.UPPER_CHAR);
+		System.out.println(&quot;\nNormal method call.&quot;);
+		f.test();
+		System.out.println(&quot;Method call which uses super.&quot;);
+		fa.anotherTest();
+	}
+}
+
+
+class FinalUsage{
+	//this can be overriden, but can&#x27;t be modified.
+	final int UPPER_CHAR = &#x27;A&#x27;;
+	//this can&#x27;t be overriden.
+	final void test(){
+		System.out.println(&quot;FinalUsage.test method.&quot;);
+	}
+	
+	//called by GC
+	protected void finalize() throws Throwable{
+		System.out.println(&quot;Finalize called.&quot;);
+	}
+}
+
+class FinalUsageAnother extends FinalUsage{
+	
+	final int UPPER_CHAR= &#x27;B&#x27;;
+	void anotherTest(){
+		//a test for super.
+		super.test();
+		System.out.println(&quot;FinalUsage.anotherTest method.&quot;);
+	}
+}</code></div><img src="FinalDemo.png"/><h1>Write a program to show final method behaviour.</h1><h3>FinalError.java</h3><div class='code'><code>public class FinalError{
+	
+	public static void main(String[] args){
+System.out.println(&quot; By Madhurendra&quot;);
+		//not compiled
+	}
+}
+
+class FinalUsage{
+	final void test(){
+		System.out.println(&quot;FinalUsage.test method.&quot;);
+	}
+}
+
+class FinalUsageAnother extends FinalUsage{
+	void test(){
+		System.out.println(&quot;FinalUsage.anotherTest method.&quot;);
+	}
+}</code></div><img src="FinalError.png"/><h1>Write a program to demostrate inheritance</h1><h3>Inheritance.java</h3><div class='code'><code>public class Inheritance{
+		public static void main(String[] args){
+System.out.println(&quot; By Madhurendra&quot;);
+			Man m = new Man();
+			Tiger t = new Tiger();
+			Child c  = new Child();
+			System.out.println(&quot;Man.isDangerous &quot;+(m.isDangerous()));
+			System.out.println(&quot;Tiger.isDangerous &quot;+(t.isDangerous()));
+			System.out.println(&quot;Child.isDangerous &quot;+(c.isDangerous()));
+			c.walk = true;						
+			System.out.println(&quot;Child.canWalk &quot;+(c.canWalk()));
+		}
+
+}
+
+class Mammal{
+	final boolean dangerous=false;
+	int AGE = 1;
+	boolean isDangerous(){
+		return dangerous;
+	}
+}
+
+class Human extends Mammal{
+	final boolean dangerous = false;	
+}
+
+class Man extends Human{
+	Man(){
+		AGE = 18;
+	}
+	boolean earn = false;
+	boolean canEarn(){
+		return earn;
+	}
+}
+
+class Child extends Human{
+	boolean walk = false;
+	boolean canWalk(){
+		return walk;
+	}
+}
+
+class Tiger extends Mammal{
+	final boolean dangerous = true;
+}</code></div><img src="Inheritance.png"/><h1>Write a program to show implementation of stack.</h1><h3>StackDemo.java</h3><div class='code'><code>public class StackDemo{
+	public static void main(String[] args){
+System.out.println(&quot; By Madhurendra&quot;);
+		Stack s = new Stack();
+		s.push(10);
+		s.push(1);
+		s.push(2);
+		System.out.println(&quot;Content of stack:&quot;);
+		s.printStack();
+		s.pop();
+		s.pop();		
+		System.out.println(&quot;\nContent of stack:&quot;);
+		s.printStack();
+	}
+	
+}
+
+
+class Stack{
+	int store[] = new int[20];
+	int top =-1;
+	
+	boolean push(int num){
+		if(store.length-1==top){
+			System.out.println(&quot;Stack overflow.&quot;);
+			return false;
+		}
+		
+		store[++top]=num;
+		return true;
+	}
+	
+	int pop(){
+		if(top==-1){
+			System.out.println(&quot;Stack underflow&quot;);
+			return -1;
+		}
+		return store[top--];
+	}
+	
+	
+	void printStack(){
+		if(top==-1)
+			return;
+		for(int i=0;i&lt;=top;++i)
+			System.out.print(store[i]+&quot; &quot;);
+	}
+}</code></div><img src="StackDemo.png"/><h1>Write a program to  demonstrate string functions.</h1><h3>StringFunction.java</h3><div class='code'><code>import java.*;
+class StringFunction
+{
+	public static void main(String args[])
+	{
+System.out.println(&quot; By Madhurendra&quot;);
+		String s1=&quot;	SHEMARK 1234567890&quot;;
+		String s2=&quot;	shemark	1234567890&quot;;
+		System.out.println(&quot;Replace s1() :: &quot;+s1.replace(&#x27;A&#x27;,&#x27;S&#x27;));
+		System.out.println(&quot;Replace s2 :: &quot;+s2.replace(&#x27;a&#x27;,&#x27;s&#x27;));
+		System.out.println(&quot;To Upper Case s2() :: &quot;+s2.toUpperCase());
+		System.out.println(&quot;To Lower Case s1() :: &quot;+s1.toLowerCase());
+		System.out.println(&quot;Sub String1 () :: &quot;+s1.substring(3,10));
+		System.out.println(&quot;Sub String2 () :: &quot;+s2.substring(3,10));
+		System.out.println(&quot;ReplaceCharSequence1 () :: &quot;+s1.replace(&quot;SH&quot;,&quot;DE&quot;));
+		System.out.println(&quot;ReplaceCharSequence2 () :: &quot;+s2.replace(&quot;sh&quot;,&quot;de&quot;));
+		System.out.println(&quot;CharAt for s1 () :: &quot;+s1.charAt(4));
+		System.out.println(&quot;CharAt for s2 () :: &quot;+s2.charAt(5));
+		System.out.println(s1 + &quot; &lt;&lt;Equals&gt;&gt; &quot; + s2 +    s1.equals(s2));
+		System.out.println(&quot;Without Trim s1 () :: &quot;+s1);
+		System.out.println(&quot;With Trim s1 () :: &quot;+s1.trim());
+		System.out.println(&quot;Without Trim s2 () :: &quot;+s2);
+		System.out.println(&quot;With Trim s2 () :: &quot;+s2.trim());
+	}
+}
+</code></div><img src="StringFunction.png"/><h1>Write a program to show threads usage.</h1><h3>thread.java</h3><div class='code'><code>//Program for Mutithread
+
+class NewThread implements Runnable{
+	String name;
+	Thread t;
+	boolean suspendFlag;
+	
+	NewThread(String t_name){
+		name=t_name;
+		t=new Thread(this,name);
+		System.out.println(&quot;New Thread &quot;+t+&quot; has begun&quot;);
+		suspendFlag=false;
+		t.start();
+	}
+	
+	public void run(){
+		try{
+			for(int i=5;i&gt;0;i--){
+				System.out.println(name+&quot; : &quot;+i);
+				Thread.sleep(1000);
+				synchronized(this){
+					while(suspendFlag){
+						wait();
+					}
+				}
+			}
+		}catch(InterruptedException e){
+			System.out.println(&quot;Thread Interrupted &quot;+e);
+		}
+		System.out.println(&quot;Thread &quot;+name+&quot; has exited.&quot;);
+	}
+	void threadSuspend(){
+		suspendFlag=true;
+	}
+	
+	synchronized void threadResume(){
+		suspendFlag=false;
+		notify();
+	}
+}
+
+class thread{
+	public static void main(String args[]){
+System.out.println(&quot; By Madhurendra&quot;);
+		NewThread One=new NewThread(&quot;ThreadOne&quot;);
+		NewThread Two=new NewThread(&quot;ThreadTwo&quot;);
+		
+		try{
+			Thread.sleep(1000);
+			One.threadSuspend();
+			System.out.println(&quot;Thread Two Suspended&quot;);
+			
+			Thread.sleep(1000);
+			One.threadResume();
+			System.out.println(&quot;Thread Two Resumed&quot;);
+			
+			Thread.sleep(1000);
+			Two.threadSuspend();
+			System.out.println(&quot;Thread One Suspended&quot;);
+			
+			Thread.sleep(1000);
+			Two.threadResume();
+			System.out.println(&quot;Thread Two Resumed&quot;);
+		}catch(InterruptedException e){
+			System.out.println(&quot;Thread Interrupted &quot;+e);
+		}
+		try{
+			System.out.println(&quot;Waiting for thread for finish&quot;);
+			One.t.join();
+			Two.t.join();
+		}catch(InterruptedException e){
+			System.out.println(&quot;Thread Interrupted &quot;+e);
+		}
+	}
+}
+</code></div><img src="thread.png"/><h1>Write a program to  demonstrate multithreading</h1><h3>MultiThread.java</h3><div class='code'><code>class A extends Thread{
+	public void run(){
+		int i;
+		for(i=1;i&lt;=10;i++){
+			System.out.println(&quot;i=&quot;+i+&quot; Thred A&quot;);
+		}
+	}
+}
+
+class B extends Thread{
+	public void run(){
+		int i;
+		for(i=1;i&lt;=10;i++){
+			System.out.println(&quot;i=&quot;+i+&quot; Thread B&quot;);
+		}
+	}
+}
+
+public class MultiThread{
+	public static void main(String []args){
+System.out.println(&quot; By Madhurendra&quot;);
+		A o1=new A();
+		B o2=new B();
+		o1.start();
+		o2.start();
+	}
+}
+</code></div><img src="MultiThread.png"/><h1>Write a program to  find greatest number.</h1><h3>Greatest.java</h3><div class='code'><code>import java.util.*;
+class Greatest
+{
+	public static void main(String args[])
+	{
+System.out.println(&quot; By Madhurendra&quot;);
+		Scanner sc=new Scanner(System.in);
+		int num1,num2,num3;
+		System.out.println(&quot;Enter the number&quot;);
+		num1=sc.nextInt();
+	 	num2=sc.nextInt();
+		num3=sc.nextInt();
+		if(num1&gt;num2 &amp;&amp; num1&gt;num3)
+		{
+			System.out.println(&quot;Greater number is :: &quot;+num1);
+		}
+		else if(num2&gt;num1 &amp;&amp; num2&gt;num3)
+		{
+			System.out.println(&quot;Greater number is :: &quot;+num2);
+		}
+		else
+		{
+			System.out.println(&quot;Greater number is :: &quot;+num3);
+		}
+	}
+}
+			
+</code></div><img src="Greatest.png"/><h1>Write a program to  use switch case.</h1><h3>Cal.java</h3><div class='code'><code>import java.util.*;
+class Cal
+{
+	public static void main(String args[])
+	{
+System.out.println(&quot; By Madhurendra&quot;);
+		Scanner sc=new Scanner(System.in);
+		int choice,num1,num2;
+		System.out.println(&quot;Enter your choice : &quot;);
+		System.out.println(&quot;1:- Addition\n2:- Substraction\n3:- Multiplication\n4:- Division:- &quot;);
+		choice=sc.nextInt();
+		switch(choice)
+		{
+			case 1:
+				int add;
+				System.out.println(&quot;Enter your number :: &quot;);
+				num1=sc.nextInt();
+				num2=sc.nextInt();
+				add=num1+num2;
+				System.out.println(&quot;Addition is :: &quot;+add);
+				break;
+			case 2:
+				int sub;
+				System.out.println(&quot;Enter your number :: &quot;);
+				num1=sc.nextInt();
+				num2=sc.nextInt();
+				sub=num1-num2;
+				System.out.println(&quot;Subtraction is :: &quot;+sub);
+				break;
+			case 3:
+				int mul;
+				System.out.println(&quot;Enter your number :: &quot;);
+				num1=sc.nextInt();
+				num2=sc.nextInt();
+				mul=num1*num2;
+				System.out.println(&quot;Multiplication is :: &quot;+mul);
+				break;
+			case 4:
+				int div;
+				System.out.println(&quot;Enter your number :: &quot;);
+				num1=sc.nextInt();
+				num2=sc.nextInt();
+				div=num1/num2;
+				System.out.println(&quot;Division is :: &quot;+div);
+				break;
+			default:
+				System.out.println(&quot;Invalid input&quot;);
+		}			
+	}
+}
+
+
+</code></div><img src="Cal.png"/><h1>Write a program to  show File Handling.</h1><h3>FileHandling.java</h3><div class='code'><code>import java.io.*;
+
+class FileHandling{
+	public static void main(String args[]){
+System.out.println(&quot; By Madhurendra&quot;);
+		char[] in=new char[30];
+		int size=0;
+		try{
+			File direx=new File(&quot;Direx.txt&quot;);
+			direx.mkdir();
+			
+			if(direx.exists()){
+				System.out.println(&quot;The directory already exists&quot;);
+				
+				File file=new File(direx,&quot;Human.txt&quot;);
+				file.createNewFile();
+				
+				FileWriter fw=new FileWriter(file);
+				BufferedWriter bw=new BufferedWriter(fw);
+				bw.write(&quot;Test content.&quot;);
+				bw.flush();
+				bw.close();
+				
+				FileReader fr=new FileReader(file);
+				BufferedReader br=new BufferedReader(fr);
+				size=br.read(in);
+				System.out.println(size);
+				
+				for(char c:in){
+					System.out.print(c);
+				}
+			}else{
+				System.out.println(&quot;Sorry this directory does not exist&quot;);
+			}
+			
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+	}	
+
+}
+</code></div><img src="FileHandling.png"/><h1>Write a program to  implement stack.</h1><h3>Stack.java</h3><div class='code'><code>import java.util.*;
+class Stack
+{
+	int top;
+	int size=10;
+	int a[]=new int[100];
+	void Push()
+	{
+		if(top==size-1)
+		{
+			System.out.println(&quot;Stack Overflow&quot;);
+		}
+		else
+		{
+			int element;
+			Scanner sc=new Scanner(System.in);
+			System.out.println(&quot;Enter the elements to be inserted&quot;);
+			element=sc.nextInt();
+			top=top+1;
+			a[top]=element;
+		}
+	}
+	int Pop()
+	{
+		if(top==-1)
+		{
+			System.out.println(&quot;Stack underflow&quot;);
+			return 0;
+		}
+		else
+		{
+			top=top-1;
+		}
+		return top;
+	}
+	void Display()
+	{
+		for(int i=1;i&lt;=top;i++)
+		{
+			System.out.println(&quot;Array elements=&quot;+a[i]);
+		}
+	}
+	public static void main(String args[])
+	{
+System.out.println(&quot; By Madhurendra&quot;);
+		int choice;
+		int ch,n;
+		Stack stack=new Stack();
+		Scanner sc=new Scanner(System.in);
+		System.out.println(&quot;Enter the size of Stack &quot;);
+		n=sc.nextInt();
+		do
+		{
+			System.out.println(&quot;Enter your choice&quot;);
+			System.out.println(&quot; 1:Push\n 2:Pop\n 3:Display&quot;);
+			choice=sc.nextInt();
+			switch(choice)	
+			{
+				case 1:
+					stack.Push();
+					break;
+				case 2:
+					stack.Pop();
+					break;
+				case 3:
+					stack.Display();
+					break;
+				default:
+					System.out.println(&quot;Invalid Input&quot;);
+			}
+			System.out.println(&quot;Do you want to continue&quot;);
+			ch=sc.nextInt();
+		}
+		while(ch==1);
+
+	}
+}
+
+		
+						
+</code></div><img src="Stack.png"/><h1>Write a program to  show Constructor Overloading</h1><h3>ConstructorOverloading.java</h3><div class='code'><code>public class ConstructorOverloading{
+	public static void main(String args[]){
+System.out.println(&quot; By Madhurendra&quot;);
+			System.out.println(&quot;\nWith 1 int param&quot;);
+			(new Server(80)).print();
+			System.out.println(&quot;\nWith 1 String param.&quot;);
+			(new Server(&quot;c:\\&quot;)).print();	
+	}
+}
+
+class Server {
+	int port;
+	String path;
+	public Server(){
+		
+	}
+	
+	public Server(int port){
+		this.port  = port;
+		
+	}
+	
+	public Server(String path){
+		this.path = path;
+	}
+	
+	public Server(String path, int port){
+		this.port = port; 
+		this.path = path;
+	}
+	
+	public Server(ServerConfig serverConfig){
+		this.port = serverConfig.port;
+		this.path = serverConfig.path;
+	}
+	
+	public void print(){
+			System.out.println(&quot;Server&#x27;s Port is &quot;+port);
+			System.out.println(&quot;Server&#x27;s Path is &quot;+path);
+	}
+}
+
+class ServerConfig{
+	//default constructor is being called.
+	public int port; //set to 0
+	public String path; //set to null
+	
+	public void print(){
+		System.out.println(&quot;Port is &quot;+port);
+		System.out.println(&quot;Path is &quot;+path);
+	}
+}
+
+</code></div><img src="ConstructorOverloading.png"/><h1>Write a program to  differentiate between constructor & method.</h1><h3>ConstructorVsMethod.java</h3><div class='code'><code>public class ConstructorVsMethod{
+	public static void main(String args[]){
+System.out.println(&quot; By Madhurendra&quot;);
+			System.out.println(&quot;Constructor vs Method\n&quot;);
+			ServerHandler s= new ServerHandler();
+			System.out.println(&quot;\nCalling method print().&quot;);
+			s.print();	
+	}
+}
+
+class ServerHandler{
+	ServerHandler(){
+		System.out.println(&quot;This is contructor called automatically.&quot;);
+	}
+	
+	void print(){
+		System.out.println(&quot;This is explicitly called by program.&quot;);
+	}
+	
+}
+</code></div><img src="ConstructorVsMethod.png"/><h1>Write a program to show default contructor.</h1><h3>DefaultConstructor.java</h3><div class='code'><code>public class DefaultConstructor{
+	public static void main(String args[]){
+System.out.println(&quot; By Madhurendra&quot;);
+			System.out.println(&quot;Default constructor&quot;);
+			ServerConfig sc = new ServerConfig();
+			sc.print();
+			sc.port = 80;
+			sc.path=&quot;c:\\sec\\&quot;;
+			System.out.println(&quot;After manually updating value.&quot;);
+			sc.print();
+		
+	
+	}
+}
+</code></div><h3>ServerConfig.java</h3><div class='code'><code>
+public class ServerConfig{
+	//default constructor is being called.
+	public int port; //set to 0
+	public String path; //set to null
+	
+	public void print(){
+		System.out.println(&quot;Port is &quot;+port);
+		System.out.println(&quot;Path is &quot;+path);
+	}
+}
+</code></div><img src="DefaultConstructor.png"/><h1>Write a program to show parameterized contructor.</h1><h3>ServerConfig.java</h3><div class='code'><code>
+public class ServerConfig{
+	//default constructor is being called.
+	public int port; //set to 0
+	public String path; //set to null
+	
+	public void print(){
+		System.out.println(&quot;Port is &quot;+port);
+		System.out.println(&quot;Path is &quot;+path);
+	}
+}
+</code></div><h3>Server.java</h3><div class='code'><code>public class Server {
+	int port;
+	String path;
+	public Server(){
+		
+	}
+	
+	public Server(int port){
+		this.port  = port;
+		
+	}
+	
+	public Server(String path){
+		this.path = path;
+	}
+	
+	public Server(String path, int port){
+		this.port = port; 
+		this.path = path;
+	}
+	
+	public Server(ServerConfig serverConfig){
+		this.port = serverConfig.port;
+		this.path = serverConfig.path;
+	}
+	
+	public void print(){
+			System.out.println(&quot;Server&#x27;s Port is &quot;+port);
+			System.out.println(&quot;Server&#x27;s Path is &quot;+path);
+	}
+}
+
+</code></div><h3>ParametarizedConstructor.java</h3><div class='code'><code>public class ParametarizedConstructor{
+	public static void main(String args[]){
+System.out.println(&quot; By Madhurendra&quot;);
+	
+			System.out.println(&quot;Non parametarized&quot;);
+			(new Server()).print();;
+			System.out.println(&quot;\nParametarized with 1 param.&quot;);
+			(new Server(80)).print();
+			System.out.println(&quot;\nParametarized with 2 param.&quot;);
+			(new Server(&quot;c:\\&quot;,80)).print();
+	}
+}
+</code></div><img src="ParametarizedConstructor.png"/><h1>Write a program to  implement insertion sort.</h1><h3>Insertion.java</h3><div class='code'><code>import java.util.*;
+class Insertion
+{
+	public static void main(String args[]) 
+	{
+System.out.println(&quot; By Madhurendra&quot;);
+		int a[]=new int[50];
+		int n,i,k,j,temp,smallest;
+		Scanner sc=new Scanner(System.in);
+		System.out.println(&quot;Enter the size of elements::&quot;);
+		n=sc.nextInt();
+		System.out.println(&quot;Enter the elements::&quot;);
+		for(i=0;i&lt;n;i++)
+		{
+			a[i]=sc.nextInt();
+		}
+		for(i=1;i&lt;n;i++)
+		{
+			temp=a[i];
+			j=i-1;	
+			while((temp&lt;a[j]) &amp;&amp; (j&gt;0))
+			{
+				a[j+1]=a[j];
+				j=j-1;
+			}
+			a[j+1]=temp;
+			System.out.print(&quot;After passes &quot;+i+&quot; :: &quot;);
+			for(k=0;k&lt;n;k++)
+			{
+				System.out.print(a[k]+&quot;\t&quot;);
+			}
+			System.out.println();		
+		}
+		System.out.print(&quot;Sorted Array :: &quot;);
+		for(i=0;i&lt;n;i++)
+		{
+			System.out.print(a[i]+&quot;\t&quot;);
+		}
+	}	
+
+}
+
+
+</code></div><img src="Insertion.png"/><h1>Write a program to use FileHandling.</h1><h3>FileHandling.java</h3><div class='code'><code>import java.io.*;
+
+class FileHandling{
+	public static void main(String args[]){
+System.out.println(&quot; By Madhurendra&quot;);
+		char[] in=new char[30];
+		int size=0;
+		try{
+			File direx=new File(&quot;Direx.txt&quot;);
+			direx.mkdir();
+			
+			if(direx.exists()){
+				System.out.println(&quot;The directory already exists&quot;);
+				
+				File file=new File(direx,&quot;Human.txt&quot;);
+				file.createNewFile();
+				
+				FileWriter fw=new FileWriter(file);
+				BufferedWriter bw=new BufferedWriter(fw);
+				bw.write(&quot;Test content.&quot;);
+				bw.flush();
+				bw.close();
+				
+				FileReader fr=new FileReader(file);
+				BufferedReader br=new BufferedReader(fr);
+				size=br.read(in);
+				System.out.println(size);
+				
+				for(char c:in){
+					System.out.print(c);
+				}
+			}else{
+				System.out.println(&quot;Sorry this directory does not exist&quot;);
+			}
+			
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+	}	
+
+}
+</code></div><img src="FileHandling.png"/><h1>Write a program to  show method overloading.</h1><h3>Overloading.java</h3><div class='code'><code>class Over
+{
+	int rollno;
+	String name;
+	void M1()
+	{
+		System.out.println(&quot;No arguments.&quot;);
+		this.M1(10,&quot;Student&quot;);
+	}
+	void M1(int rollno, String name)
+	{
+		this.rollno=rollno;
+		this.name=name;
+	}
+	void M1(String name)
+	{
+		System.out.println(&quot;Name is::&quot;+name);
+	}
+	void show()
+	{
+		System.out.println(&quot;Roll no::&quot;+rollno);
+		System.out.println(&quot;Name is::&quot;+name);
+	}
+}
+class Overloading
+{
+	public static void main(String args[])
+	{
+System.out.println(&quot; By Madhurendra&quot;);
+		Over obj=new Over();
+		obj.M1();
+		obj.show();
+	}
+}
+</code></div><img src="Overloading.png"/>
