@@ -2,9 +2,9 @@
 Java Lab File Generator - for creating a lab file from given set of programs automatically with screenshots !
 
 # Example Lab Report file 
-- [PDF](JLFG/build-example/generated.pdf)
-- [HTML](JLFG/build-example/generated.html)
-- [Example Screenshots](JLFG/tree/master/build-example)
+- [PDF](build-example/generated.pdf)
+- [HTML](build-example/generated.html)
+- [Example Screenshots](build-example)
 
 
 # Basic
